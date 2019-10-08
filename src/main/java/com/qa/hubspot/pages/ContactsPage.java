@@ -12,22 +12,22 @@ import com.qa.hubspot.base.BasePage;
 public class ContactsPage extends BasePage 
 {
 	
-	 @FindBy(xpath="//li//span[text()='Create contact']")
+	 @FindBy(xpath="//li/button[@data-confirm-button='accept']")
 	    WebElement CreateContactSecondbtn;
 	
 	 @FindBy(xpath="//span[text()='Create contact']")
 	    WebElement CreateFirstBtn;
 	 
-    @FindBy(id="uid-ctrl-1")
+    @FindBy(xpath="//input[@data-field='email']")
     WebElement email;
     
-    @FindBy(id="uid-ctrl-2")
+    @FindBy(xpath="//input[@data-field='firstname']")
     WebElement FirstName;
     
-    @FindBy(id="uid-ctrl-3")
+    @FindBy(xpath="//input[@data-field='lastname']")
     WebElement LastName;
     
-    @FindBy(id="uid-ctrl-5")
+    @FindBy(xpath="//input[@data-field='jobtitle']")
     WebElement JobTitle;
     
     public ContactsPage(WebDriver driver)

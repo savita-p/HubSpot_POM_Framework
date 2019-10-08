@@ -11,7 +11,7 @@ import com.qa.hubspot.util.TimeUtil;
 public class HomePage extends BasePage 
 {
 	// 1. create page factory
-	@FindBy(xpath="//h1[@class='private-page__title']")
+	@FindBy(xpath=" //i18n-string[text()='Set up your HubSpot account']")
 	WebElement homePageheader;
 	
 	@FindBy(xpath="//span[@class='account-name']")

@@ -66,7 +66,7 @@ public class BasePage
 	{
 		prop=new Properties();
 		try {
-			FileInputStream ip=new FileInputStream("C:\\Users\\mailp\\eclipse-workspace\\POM_Project\\src\\main\\java\\com\\qa\\hubspot\\configuration\\config.properties");
+			FileInputStream ip=new FileInputStream("C:\\Users\\mailp\\Downloads\\POMFramework\\src\\main\\java\\com\\qa\\hubspot\\configuration\\config.properties");
 		   try {
 			prop.load(ip);
 		} catch (IOException e) {

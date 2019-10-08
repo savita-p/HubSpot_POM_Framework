@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Hub Spot App Regression Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 27 17:56:40 CDT 2019</td>
+<td>Started on:</td><td>Mon Oct 07 20:44:45 CDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>114 seconds (114153 ms)</td>
+<tr><td>Total time:</td><td>303 seconds (303536 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,28 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitle()'><b>verifyLoginPageTitle</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [HubSpot Loginsss] but found [HubSpot Login]
-	at com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitle(LoginPageTest.java:52)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1838562672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1838562672'><pre>java.lang.AssertionError: expected [HubSpot Loginsss] but found [HubSpot Login]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitle(LoginPageTest.java:52)
+<td title='com.qa.hubspot.tests.ContactsPageTest.createNewContacts()'><b>createNewContacts</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: prashant@gmail.com, prashant, p, VP</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (42ca0711960b82dcc2ad659230103bf5)] -&gt; xpath: //input[@data-field=&apos;email&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-CIUUGKB&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\mailp\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 42ca0711960b82dcc2ad659230103bf5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:47)
+	at com.qa.hubspot.tests.ContactsPageTest.createNewContacts(ContactsPageTest.java:51)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace447392721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace447392721'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (42ca0711960b82dcc2ad659230103bf5)] -&gt; xpath: //input[@data-field=&apos;email&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-CIUUGKB&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\mailp\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 42ca0711960b82dcc2ad659230103bf5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.pages.ContactsPage.createNewContact(ContactsPage.java:47)
+	at com.qa.hubspot.tests.ContactsPageTest.createNewContacts(ContactsPageTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -113,8 +123,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@1eef9aef</td></tr>
+<td>20</td>
+<td>com.qa.hubspot.tests.ContactsPageTest@5003041b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -124,20 +134,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.loginPageWithCorrectCredentials()'><b>loginPageWithCorrectCredentials</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td></td>
-<td>13</td>
-<td>com.qa.hubspot.tests.LoginPageTest@1eef9aef</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.loginwithIncorrectCredentials()'><b>loginwithIncorrectCredentials</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
-<td></td>
-<td>13</td>
-<td>com.qa.hubspot.tests.LoginPageTest@1eef9aef</td></tr>
-<tr>
-<td title='com.qa.hubspot.tests.LoginPageTest.verifySignupLink()'><b>verifySignupLink</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
+<td title='com.qa.hubspot.tests.HomePageTest.VerifyHomePageTitle()'><b>VerifyHomePageTitle</b><br>Test class: com.qa.hubspot.tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.LoginPageTest@1eef9aef</td></tr>
+<td>com.qa.hubspot.tests.HomePageTest@59a67c3a</td></tr>
+<tr>
+<td title='com.qa.hubspot.tests.ContactsPageTest.createNewContacts()'><b>createNewContacts</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: savita@gmail.com, savita, s, tester</td>
+<td></td>
+<td>10</td>
+<td>com.qa.hubspot.tests.ContactsPageTest@5003041b</td></tr>
+<tr>
+<td title='com.qa.hubspot.tests.ContactsPageTest.createNewContacts()'><b>createNewContacts</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: pranav@gmail.com, pranav, p, manager</td>
+<td></td>
+<td>12</td>
+<td>com.qa.hubspot.tests.ContactsPageTest@5003041b</td></tr>
+<tr>
+<td title='com.qa.hubspot.tests.ContactsPageTest.createNewContacts()'><b>createNewContacts</b><br>Test class: com.qa.hubspot.tests.ContactsPageTest<br>Parameters: kiran@gmail.com, kiran, p, Business Head</td>
+<td></td>
+<td>9</td>
+<td>com.qa.hubspot.tests.ContactsPageTest@5003041b</td></tr>
+<tr>
+<td title='com.qa.hubspot.tests.LoginPageTest.verifyLoginPageTitle()'><b>verifyLoginPageTitle</b><br>Test class: com.qa.hubspot.tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.hubspot.tests.LoginPageTest@1ee4730</td></tr>
 </table><p>
 </body>
 </html>

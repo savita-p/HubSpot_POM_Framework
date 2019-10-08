@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Hub Spot Regression Test Automation Suite]">
   <listeners>
-    <listener class-name="com.qa.hubspot.listeners.AllureReportListener"/>
+    <listener class-name="com.qa.hubspot.listeners.pdfListener"/>
   </listeners>
   <test thread-count="5" name="Hub Spot App Regression Test Cases(failed)">
     <classes>
-      <class name="com.qa.hubspot.tests.LoginPageTest">
+      <class name="com.qa.hubspot.tests.ContactsPageTest">
         <methods>
+          <include name="createNewContacts" invocation-numbers="2"/>
+          <include name="TearDown"/>
           <include name="setup"/>
-          <include name="verifyLoginPageTitle"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
     </classes>
   </test> <!-- Hub Spot App Regression Test Cases(failed) -->
 </suite> <!-- Failed suite [Hub Spot Regression Test Automation Suite] -->

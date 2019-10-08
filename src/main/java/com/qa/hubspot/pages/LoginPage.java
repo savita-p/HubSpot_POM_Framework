@@ -1,5 +1,6 @@
 package com.qa.hubspot.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +25,10 @@ public class LoginPage extends BasePage
 	
 	@FindBy(linkText="Sign up")
 	WebElement signup;
+	
+	@FindBy(xpath="//i18n-string[@data-key='login.formValidation.invalidEmail']")
+	WebElement InvalidEmail;
+	
 	
 	
 	
@@ -60,6 +65,15 @@ public class LoginPage extends BasePage
 		TimeUtil.longWait();
 		return new HomePage(driver);
 	}
+	
+	@Step("Verify Invalid Email Error Message}")
+    public String VerifyEmailErrorMessage(String username)
+    {
+    	emailid.sendKeys(username);
+    	emailid.sendKeys(Keys.TAB);
+    	String ErrorMsg=InvalidEmail.getText();
+    	return ErrorMsg;
+    }
 	
 		
 }

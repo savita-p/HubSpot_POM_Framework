@@ -78,10 +78,20 @@ public class LoginPageTest {
      loginpage.doLogin("test@ggg","tets2t2"); 
      }
 	
+	@Description("test case name:Verify Inavalid Email Error Message- negative test case")
+	@Severity(SeverityLevel.NORMAL)
+    @Test (priority=5)
+    public void VerifyInvalidEmailErrorMessage()
+    {
+		String ActualErrorMsg=loginpage.VerifyEmailErrorMessage(prop.getProperty("InvalidUsername"));
+		Assert.assertEquals(ActualErrorMsg, Constants.Inavalid_Email_Errormsg);
+     
+    }
+	
 	@AfterMethod
 	public void teardown()
 	{
-		driver.quit();
+	driver.quit();
 	}
 
 }
